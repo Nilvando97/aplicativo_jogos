@@ -10,7 +10,8 @@ class TelaJogoDaVelha extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Jogo da Velha'),
+        
+        title: const Center(child: Text('Jogo da Velha')),
         actions: [
           IconButton(
             icon: const Icon(Icons.refresh),
@@ -37,7 +38,7 @@ class TelaJogoDaVelha extends StatelessWidget {
                   modelo.fazerJogada(indice);
                 },
                 child: Container(
-                  color: Colors.blueAccent,
+                  color: Colors.blue,
                   child: Center(
                     child: Text(
                       modelo.tabuleiro[indice],
