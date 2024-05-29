@@ -5,7 +5,7 @@ import '../models/jogo_da_forca_model.dart';
 class TelaJogoDaForca extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var jogo = Provider.of<JogoDaForca>(context);
+    var jogo = Provider.of<JogoDaForcaModel>(context);
 
     return Scaffold(
       appBar: AppBar(
@@ -45,7 +45,7 @@ class TelaJogoDaForca extends StatelessWidget {
     );
   }
 
-  Widget construirPalavra(JogoDaForca jogo) {
+  Widget construirPalavra(JogoDaForcaModel jogo) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: jogo.palavra.split('').map((letra) {
@@ -60,7 +60,7 @@ class TelaJogoDaForca extends StatelessWidget {
     );
   }
 
-  Widget construirTeclado(JogoDaForca jogo, BuildContext context) {
+  Widget construirTeclado(JogoDaForcaModel jogo, BuildContext context) {
     return Wrap(
       alignment: WrapAlignment.center,
       children: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((letra) {

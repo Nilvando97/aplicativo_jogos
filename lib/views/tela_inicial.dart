@@ -13,8 +13,9 @@ class TelaInicial extends StatelessWidget {
             Center(
               child: CircularButton(
                 imagePath: 'assets/images/jogoDaVelha.png',
-                onTap: () {Navigator.pushNamed(context, '/jogoDaVelha');
-                print("clicando");
+                onTap: () {
+                  Navigator.pushNamed(context, '/jogoDaVelha');
+                  print("clicando");
                 },
               ),
             ),
@@ -22,9 +23,19 @@ class TelaInicial extends StatelessWidget {
             const SizedBox(height: 15),
             CircularButton(
               imagePath: 'assets/images/jogoDaForca.png',
-              onTap: () {Navigator.pushNamed(context, '/jogoDaForca');},
+              onTap: () {
+                Navigator.pushNamed(context, '/jogoDaForca');
+              },
             ),
             const Text("Jogo da Forca"),
+            const SizedBox(height: 15),
+            CircularButton(
+              imagePath: 'assets/images/termo.png',
+              onTap: () {
+                Navigator.pushNamed(context, '/jogoDoTermo');
+              },
+            ),
+            const Text("Jogo da Termo"),
           ],
         ),
       ),

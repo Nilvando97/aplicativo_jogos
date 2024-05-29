@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class JogoDaForca with ChangeNotifier {
+class JogoDaForcaModel with ChangeNotifier {
   String _palavra = 'LINCE';
   List<String> _letrasAdivinhadas = [];
   int _tentativasRestantes = 6;
